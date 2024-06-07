@@ -13,4 +13,5 @@ app.use(express.json()); //to parse the incoming requests with JSON payloads
 app.use("/api/auth", authRoutes);
 app.listen(PORT, () => {
     connectMongoDB();
+    console.log("server is running on port: "+PORT );
 });
